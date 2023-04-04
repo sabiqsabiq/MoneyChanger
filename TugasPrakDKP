@@ -1,11 +1,7 @@
 
+
 def konversi_matauang(jumlah, kurs):
     return jumlah * kurs
-
-
-def selamat_datang():
-    print("Selamat datang di program konversi mata uang")
-
 
 def money_changer(name: str):
     while True:
@@ -25,8 +21,11 @@ def money_changer(name: str):
         else:
             print("Jenis mata uang yang anda masukkan tidak tersedia. Silakan coba lagi.")
 
+class selamatdatang:
+def selamat_datang():
+    print("Selamat datang di program konversi mata uang")
 
-selamat_datang()
+selamatdatang.selamat_datang()
 while True:
     name = input("Masukkan nama Anda: ")
     money_changer(name)
