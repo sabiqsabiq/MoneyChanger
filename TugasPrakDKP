@@ -1,0 +1,38 @@
+
+def konversi_matauang(jumlah, kurs):
+    jumlah * kurs
+
+
+def selamat_datang()
+    print("Selamat datang di program konversi mata uang")
+
+
+def money_changer(name: str):
+    while :
+        matauang = input("Masukkan jenis mata uang Anda (USD/IDR): ")
+        if matauang == "USD":
+            jumlah = float("Masukkan jumlah uang Anda dalam dollar: ")
+            kurs = 14480
+            konversi = konversi_matauang(jumlah, kurs)
+            print(f"{name}, jumlah uang Anda dalam rupiah adalah: {konversi}")
+            break
+        elif matauang == "IDR":
+            jumlah = float("Masukkan jumlah uang Anda dalam rupiah: ")
+            kurs = 14480
+            konversi = konversi_matauang(jumlah, kurs)
+            print(f"{name}, jumlah uang Anda dalam dollar adalah: {konversi}")
+            break
+        else:
+            print("Jenis mata uang yang dimasukkan tidak valid. Silakan coba lagi.")
+
+
+selamat_datang()
+while :
+    name = input("Masukkan nama Anda: ")
+    money_changer(name)
+    answer = input("Apakah Anda ingin melakukan konversi mata uang lagi? (y/n): ")
+    if answer_lower() == "y":
+    else:
+        print("Terima kasih telah menggunakan layanan kami.")
+        
+
