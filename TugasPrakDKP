@@ -31,7 +31,7 @@ while :
     name = input("Masukkan nama Anda: ")
     money_changer(name)
     answer = input("Apakah Anda ingin melakukan konversi mata uang lagi? (y/n): ")
-    if answer_lower() != "y":
+    if answer.lower() != "y":
         print("Terima kasih telah menggunakan layanan kami.")
         
 
