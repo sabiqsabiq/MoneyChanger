@@ -14,16 +14,16 @@ def money_changer(name: str):
             jumlah = float(input("Masukkan jumlah uang Anda dalam dollar: "))
             kurs = 14480
             konversi = konversi_matauang(jumlah, kurs)
-            print(f"{name}, jumlah uang Anda dalam rupiah adalah: Rp.{konversi}")
+            print(f"{name}, jumlah uang Anda dalam rupiah adalah: Rp.{konversi:.2f}")
             break
         elif matauang == "IDR":
             jumlah = float(input("Masukkan jumlah uang Anda dalam rupiah: "))
-            kurs = 14480
+            kurs = 1/14480
             konversi = konversi_matauang(jumlah, kurs)
-            print(f"{name}, jumlah uang Anda dalam dollar adalah: ${konversi}")
+            print(f"{name}, jumlah uang Anda dalam dollar adalah: ${konversi:.2f}")
             break
         else:
-            print("Jenis mata uang yang dimasukkan tidak valid. Silakan coba lagi.")
+            print("Jenis mata uang yang anda masukkan tidak tersedia. Silakan coba lagi.")
 
 
 selamat_datang()
