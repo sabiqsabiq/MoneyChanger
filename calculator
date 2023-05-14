@@ -24,3 +24,21 @@ class Calculator:
     
   def divide(self):
     raise NotImplementedError("Subclass must implement abstract method")
+
+class BasicCalculator(Calculator):
+  def __init__(self):
+    super().__init__(2)
+    
+  def add(self):
+    return self.getNumber(0) + self.getNumber(1)
+    
+  def subtract(self):
+    return self.getNumber(0) - self.getNumber(1)
+    
+  def multiply(self):
+    return self.getNumber(0) * self.getNumber(1)
+    
+  def divide(self):
+    return self.getNumber(0) / self.getNumber(1)
+
+    
