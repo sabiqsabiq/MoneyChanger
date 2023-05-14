@@ -56,4 +56,29 @@ class ScientificCalculator(Calculator):
     for i in range(1, int(self.getNumber(0))+1):
       result *= i
     return result
-    
+  
+    if __name__ == '__main__':
+  choice = input("Choose calculator type (1: Basic, 2: Scientific): ")
+  if choice == '1':
+    basicCalculator = BasicCalculator()
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    basicCalculator.setNumber(0, num1)
+    basicCalculator.setNumber(1, num2)
+    print("Basic Calculator")
+    print("Addition:", basicCalculator.add())
+    print("Subtraction:", basicCalculator.subtract())
+    print("Multiplication:", basicCalculator.multiply())
+    print("Division:", basicCalculator.divide())
+    basicCalculator.clear()
+  elif choice == '2':
+    scientificCalculator = ScientificCalculator()
+    num = float(input("Enter number: "))
+    scientificCalculator.setNumber(0, num)
+    print("Scientific Calculator")
+    print("Square root:", scientificCalculator.squareRoot())
+    print("Exponential:", scientificCalculator.exponential())
+    print("Factorial:", scientificCalculator.factorial())
+    scientificCalculator.clear()
+  else:
+    print("Invalid choice!")
